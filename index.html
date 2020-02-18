@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Download Random Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="generator">
+        <label class="generator__input-name">Select Gender:
+            <select class="generator__select" name="gender">
+                <option value="both" selected>Both</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </label>
+
+        <label class="generator__input-nationality">Select Nationality:
+            <select class="generator__select" name="nat">
+                <option value="">-</option>
+                <option value="AU">AU</option>
+                <option value="CH">CH</option>
+                <option value="DE">DE</option>
+                <option value="ES">ES</option>
+                <option value="FR">FR</option>
+                <option value="GB">GB</option>
+                <option value="IR">IR</option>
+                <option value="NL">NL</option>
+                <option value="US">US</option>
+            </select>
+        </label>
+
+        <label class="generator__input-number">Amount:
+            <input class="generator__input" type="number" value='10' , name="users-number">
+        </label>
+        <input type="submit" class="button" value="Download users">
+    </form>
+    <div class="user-list"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
